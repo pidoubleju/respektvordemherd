@@ -1,0 +1,8 @@
+[
+  {
+    "id": "landingpage",
+    "name": "Landingpage",
+    "repeatable": false,
+    "value": "landingpage.json"
+  }
+]
