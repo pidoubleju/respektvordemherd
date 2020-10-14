@@ -11,6 +11,7 @@ body {
 
 .container {
     padding: var(--layout-space-medium);
+    padding-top: var(--layout-space-small);
 }
 
 h1,h2,h3 {

@@ -27,5 +27,6 @@
     --space-medium: 10px;
     --space-large: 20px;
     --space-extra-large: 50px;
-    --layout-space-medium: 100px;
+    --layout-space-medium: 150px;
+    --layout-space-small: 50px;
 }

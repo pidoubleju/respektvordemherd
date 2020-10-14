@@ -1,15 +1,18 @@
 import React from 'react';
+import { ACTIONS } from './HighlightPosts';
 
-function HighlightPostsSidebar({posts}) {
+function HighlightPostsSidebar({posts, dispatch}) {
     return (
-        posts.map(post => {
-            const { blog_header} = post.post.data;
-            return (
-                <div className="post" key={post.post.id}>
-                    <h3>{blog_header[0].text}</h3>
-                </div>
-            )
-        })
+        <div className="post-sidebar">
+            {posts.map(post => {
+                const { blog_header} = post.post.data;
+                return (
+                    <div className="post" key={post.post.id} onClick={() => dispatch({type: ACTIONS.SET_ACTIVE, payload: {activePost: post} })}>
+                        <h3>{blog_header[0].text}</h3>
+                    </div>
+                )
+            })}
+        </div>
     )
 };
 

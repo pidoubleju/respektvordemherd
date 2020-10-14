@@ -1,0 +1,31 @@
+.highlight-posts {
+  align-items: center;
+  width: 100%;
+}
+.highlight-post {
+  flex: 9;
+}
+.highlight-post > .post {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.highlight-post > .post > .wrapper {
+    position: absolute;
+    left: 0;
+}
+.highlight-post .teaser-text {
+  width: 470px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.highlight-post .post-header {
+    width: 600px;
+}
+.post-sidebar {
+  flex: 1;
+}
+.post-sidebar .post {
+  cursor: pointer;
+}
