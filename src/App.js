@@ -11,9 +11,6 @@ import { Help, Preview, NotFound, Landingpage } from './pages'
 import './styles/variables.css'
 import './styles/base.css'
 
-/**
- * Main application componenet
- */
 const App = (props) => {
   const repoNameArray = /([^/]+)\.cdn.prismic\.io\/api/.exec(apiEndpoint)
   const repoName = repoNameArray[1]

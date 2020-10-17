@@ -1,0 +1,15 @@
+.showcase-category {
+    align-items: center;
+    justify-content: center;
+}
+.showcase-category .cat-info > p {
+    width: 470px;
+}
+.showcase-category .cat-info > p > h2 { 
+    display: inline;
+    line-height: 1.0;
+    margin-left: -80px;
+    margin-right: var(--space-large);
+}
+.showcase-category.order-switch .cat-info { order: 0;}
+.showcase-category.order-switch .cat-img { order: 1;}

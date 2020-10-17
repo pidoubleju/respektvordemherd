@@ -25,3 +25,7 @@ h1,h2,h3 {
 h1 { font-size: var(--font-size-h1); }
 h2 { font-size: var(--font-size-h2); }
 h3 { font-size: var(--font-size-h3); }
+
+.w-100 {
+    width: 100%;
+}
