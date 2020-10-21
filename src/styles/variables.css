@@ -13,20 +13,23 @@
     --nightshade: #11100E;
     --golden-hour: #F6C78B;
     --bronze-boldness: #CE8F5E;
+    --titanium-white: #bdbdbd;
     --font-size-base: 16px;
     --font-size-h1: 64px;
     --font-size-h2: 46px;
-    --font-size-h3: 36;
+    --font-size-h3: 36px;
+    --font-size-h3: 25px;
     --font-family-header: 'Merriweather';
     --font-weight-header: 700;
     --font-family-body: 'Mulish';
     --font-weight-body: 500;
-    --line-height: 1.6;
+    --line-height: 1.7;
     --space-super-small: 3px;
     --space-small: 5px;
     --space-medium: 10px;
-    --space-large: 20px;
-    --space-extra-large: 50px;
-    --layout-space-medium: 150px;
+    --space-large: 30px;
+    --space-extra-large: 70px;
     --layout-space-small: 50px;
+    --layout-space-medium: 150px;
+    --layout-space-large: 300px;
 }

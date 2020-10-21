@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useReducer } from "react";
+import React, { useEffect, useReducer } from "react";
 import HighlightPostsSidebar from "./HighlightPostsSidbar";
 import "../styles/components/Highlightposts.css";
 
@@ -43,14 +43,16 @@ function HighlightPosts({ posts }) {
   }
 
   return (
-    <div className="highlight-posts container flex">
-      <div className="highlight-post">{renderActivePost(state.activePost)}</div>
-      <HighlightPostsSidebar
-        posts={posts.filter(
-          (post) => posts.indexOf(post) !== posts.indexOf(state.activePost)
-        )}
-        dispatch={dispatch}
-      />
+    <div className="highlight-posts container flex justify-center">
+      <div className="wrapper relative w-100">
+        <div className="highlight-post">{renderActivePost(state.activePost)}</div>
+        <HighlightPostsSidebar
+          posts={posts.filter(
+            (post) => posts.indexOf(post) !== posts.indexOf(state.activePost)
+          )}
+          dispatch={dispatch}
+        />
+      </div>
     </div>
   );
 }

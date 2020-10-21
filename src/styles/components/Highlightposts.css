@@ -1,12 +1,12 @@
 .highlight-posts {
   align-items: center;
   width: 100%;
+  padding-bottom: var(--layout-space-small);
 }
 .highlight-post {
-  flex: 9;
+  height: 850px;
 }
 .highlight-post > .post {
-    position: relative;
     align-items: center;
     justify-content: center;
 }
@@ -24,7 +24,12 @@
     width: 600px;
 }
 .post-sidebar {
-  flex: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  align-items: center;
+  justify-content: flex-end;
 }
 .post-sidebar .post {
   cursor: pointer;

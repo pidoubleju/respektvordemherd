@@ -29,6 +29,10 @@ const Landingpage = ({ match }) => {
     return (
       <div className="landingpage flex">
         <HighlightPosts posts={doc.data['highlight-posts']} />
+        <div className="container">
+          <h2>{doc.data['intro_text'][0].text}</h2>
+          <p className="basic-columns">{doc.data['intro_text1'][0].text}</p>
+        </div>
         <CategoryShowcase data={{header: doc.data['kategorie_header'], kategorien: doc.data['post_kategorien']}}/>
       </div>
     )
