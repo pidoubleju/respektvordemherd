@@ -1,0 +1,7 @@
+.grid {
+    justify-content: space-between;
+}
+
+.grid-item {
+    flex-basis: 25%;
+}

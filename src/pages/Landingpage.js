@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { client } from '../prismic-configuration';
-import NotFound from './NotFound';
 import '../styles/pages/Landingpage.css';
 import HighlightPosts from '../components/HighlightPosts';
 import CategoryShowcase from '../components/CategoryShowcase';
 
 const Landingpage = () => {
 	const [doc, setDocData] = useState(null);
-	const [notFound, toggleNotFound] = useState(false);
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -20,16 +18,15 @@ const Landingpage = () => {
 			});
 			if (result) {
 				return setDocData(result);
-			} else {
-				toggleNotFound(true);
 			}
 		};
 		fetchData();
 	}, []);
 
-	if (doc) {
-		return (
-			<div className='landingpage flex'>
+	return (
+		<div className='landingpage background-dark flex fill-height'>
+			{doc && 
+				<React.Fragment>
 				<HighlightPosts posts={doc.data['highlight-posts']} />
 				<div className='container'>
 					<h2>{doc.data['intro_text'][0].text}</h2>
@@ -41,12 +38,10 @@ const Landingpage = () => {
 						kategorien: doc.data['post_kategorien'],
 					}}
 				/>
-			</div>
-		);
-	} else if (notFound) {
-		return <NotFound />;
-	}
-	return null;
+				</React.Fragment>
+			}
+		</div>
+	);
 };
 
 export default Landingpage;
