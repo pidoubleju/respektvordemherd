@@ -9,7 +9,7 @@ function PostPreview({ data }) {
 			<div className="post-img">
 				<Image fullWidth={true} data={data.data['post_hintergrund']}/>
 			</div>
-			<Heading type="3" headingData={data.data['blog_header'][0]} />
+			<Heading type="3" headingData={data.data['blog_header']} />
 			{RichText.render(data.data['abschnitt_1_text'])}
 		</div>
 	);

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { client } from '../prismic-configuration';
-import NotFound from './NotFound';
 import Prismic from 'prismic-javascript';
 import PostList from '../components/PostList';
 import Heading from '../components/atoms/Heading';
@@ -12,7 +11,6 @@ function Category({
 	},
 }) {
 	const [doc, setDocData] = useState([]);
-	const [notFound, toggleNotFound] = useState(false);
 	const categoryHeader = useCapitalization(name);
 
 	useEffect(() => {
@@ -22,8 +20,6 @@ function Category({
 			);
 			if (result.results.length > 0) {
 				setDocData(result.results);
-			} else {
-				toggleNotFound(true);
 			}
 		};
 		fetchData();
@@ -32,7 +28,7 @@ function Category({
 	return (
 		<div className='category background-dark fill-height'>
 			<div className='container'>
-				<Heading headingData={{ text: categoryHeader, type: 'heading1' }} />
+				<Heading type="1" headingData={{ text: categoryHeader }} />
 				<PostList posts={doc} />
 			</div>
 		</div>
