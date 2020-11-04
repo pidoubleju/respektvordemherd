@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
 import { client } from '../prismic-configuration';
 import NotFound from '../pages/NotFound';
 import NavigationItem from '../components/NavigationItem';

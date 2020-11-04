@@ -1,0 +1,20 @@
+.head-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-section h1 {
+    position: absolute;
+}
+
+.post-detail .relative img {
+    filter: brightness(30%);
+    height: 600px;
+    object-fit: cover;
+}

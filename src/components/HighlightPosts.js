@@ -1,5 +1,6 @@
 import React, { useEffect, useReducer } from 'react';
 import HighlightPostsSidebar from './HighlightPostsSidbar';
+import { useHistory } from 'react-router-dom';
 import '../styles/components/Highlightposts.css';
 
 export const ACTIONS = {
@@ -17,9 +18,15 @@ function reducer(state, action) {
 }
 
 function HighlightPosts({ posts }) {
+	let history = useHistory();
 	const [state, dispatch] = useReducer(reducer, {
 		activePost: {},
 	});
+
+
+	function viewPostDetail({post}) {
+		history.push(`/category/${post.tags[0]}/${post.uid}`);
+	}
 
 	useEffect(() => {
 		dispatch({ type: ACTIONS.SET_ACTIVE, payload: { activePost: posts[0] } });
@@ -32,7 +39,7 @@ function HighlightPosts({ posts }) {
 		const { galerie, blog_header, abschnitt_1_text: teaser } = post.post.data;
 		const { alt, url } = galerie[0].galerie_bild;
 		return (
-			<div className='post flex' key={post.post.id}>
+			<div className='post flex' key={post.post.id} onClick={() => { viewPostDetail(post) }}>
 				<div className='wrapper'>
 					<h1 className='post-header'>{blog_header[0].text}</h1>
 					<p className='teaser-text'>{teaser[0].text}</p>
