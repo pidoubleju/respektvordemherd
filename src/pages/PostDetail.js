@@ -7,6 +7,7 @@ import { useParams } from 'react-router-dom';
 import Image from '../components/atoms/Image';
 import '../styles/components/PostDetail.css'
 import { RichText } from 'prismic-reactjs';
+import Slice from '../components/Slice'
 
 function PostDetail() {
 	const [doc, setDocData] = useState(null);
@@ -17,7 +18,6 @@ function PostDetail() {
 		const fetchData = async () => {
 			const result = await client.getByUID('post', uid);
 			if (result && result.data) {
-				console.log(result.data);
 				setDocData(result.data);
 			} else {
 				setNotFound(true);
@@ -39,6 +39,7 @@ function PostDetail() {
 				<div className='container'>
 					<Heading headingData={doc['abschnitt_1_header']}/>
 					{RichText.render(doc['abschnitt_1_text'])}
+					<Slice items={doc.body} />
 				</div>
 			</React.Fragment>
 			)}
