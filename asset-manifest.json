@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/respektvordemherd/static/css/main.88569171.chunk.css",
+    "main.js": "/respektvordemherd/static/js/main.12421b08.chunk.js",
+    "main.js.map": "/respektvordemherd/static/js/main.12421b08.chunk.js.map",
+    "runtime-main.js": "/respektvordemherd/static/js/runtime-main.8a7fbd1a.js",
+    "runtime-main.js.map": "/respektvordemherd/static/js/runtime-main.8a7fbd1a.js.map",
+    "static/js/2.4d0f287e.chunk.js": "/respektvordemherd/static/js/2.4d0f287e.chunk.js",
+    "static/js/2.4d0f287e.chunk.js.map": "/respektvordemherd/static/js/2.4d0f287e.chunk.js.map",
+    "index.html": "/respektvordemherd/index.html",
+    "precache-manifest.29ad2296105b796e8d883bb398a212fa.js": "/respektvordemherd/precache-manifest.29ad2296105b796e8d883bb398a212fa.js",
+    "service-worker.js": "/respektvordemherd/service-worker.js",
+    "static/css/main.88569171.chunk.css.map": "/respektvordemherd/static/css/main.88569171.chunk.css.map",
+    "static/js/2.4d0f287e.chunk.js.LICENSE.txt": "/respektvordemherd/static/js/2.4d0f287e.chunk.js.LICENSE.txt",
+    "static/media/variables.css": "/respektvordemherd/static/media/mulish.767965d0.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8a7fbd1a.js",
+    "static/js/2.4d0f287e.chunk.js",
+    "static/css/main.88569171.chunk.css",
+    "static/js/main.12421b08.chunk.js"
+  ]
+}
