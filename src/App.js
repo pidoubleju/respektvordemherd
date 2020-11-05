@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
 import { apiEndpoint } from './prismic-configuration';
 import { Preview, NotFound, Landingpage, Category } from './pages';
 import './styles/variables.css';
@@ -21,7 +21,7 @@ const App = () => {
 					src={`//static.cdn.prismic.io/prismic.js?repo=${repoName}&new=true`}
 				/>
 			</Helmet>
-			<BrowserRouter>
+			<HashRouter>
 				<Navigation />
 				<Switch>
 					<Redirect exact from='/' to='/home' />
@@ -31,7 +31,7 @@ const App = () => {
 					<Route exact path='/category/:name/:uid' component={PostDetail} />
 					<Route component={NotFound} />
 				</Switch>
-			</BrowserRouter>
+			</HashRouter>
 		</Fragment>
 	);
 };
