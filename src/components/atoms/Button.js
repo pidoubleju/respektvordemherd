@@ -3,7 +3,7 @@ import '../../styles/components/Button.css'
 
 function Button({onClick, children, label}) {
     return (
-        <button className="btn" onClick={onClick ? onClick : () => {}}>
+        <button className="btn btn-default" onClick={onClick ? onClick : () => {}}>
             { children ? children : label }
         </button>
     )
