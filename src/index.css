@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Merriweather';
+  font-weight: 700;
+  src: url(./fonts/merriweather-black.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Mulish';
+  font-weight: 500;
+  src: url(./fonts/mulish-regular.ttf) format('truetype');
+}
+
 body {
   margin: 0;
   padding: 0;

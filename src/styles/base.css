@@ -3,6 +3,7 @@ body {
 	font-weight: var(--font-weight-body);
 	line-height: var(--line-height);
 	color: var(--titanium-white);
+	font-family: var(--font-family-body);
 }
 
 .relative {
