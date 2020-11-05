@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { client } from '../prismic-configuration';
-import Prismic from 'prismic-javascript';
 import Heading from '../components/atoms/Heading';
-import useCapitalization from '../hooks/useCapitalization';
 import { useParams } from 'react-router-dom';
 import Image from '../components/atoms/Image';
 import '../styles/components/PostDetail.css'
@@ -24,7 +22,7 @@ function PostDetail() {
 			}
 		};
 		fetchData();
-	}, []);
+	}, [uid]);
 
 	return (
 		<div className='post-detail fill-height background-dark'>

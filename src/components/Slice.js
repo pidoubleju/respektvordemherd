@@ -1,6 +1,4 @@
 import React from 'react';
-import { RichText } from 'prismic-reactjs';
-import Heading from '../components/atoms/Heading';
 import TextSlice from '../components/atoms/TextSlice';
 import BannerSlice from '../components/atoms/BannerSlice';
 
