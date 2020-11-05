@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/respektvordemherd/static/css/main.88569171.chunk.css",
+    "main.css": "/respektvordemherd/static/css/main.1459ef7a.chunk.css",
     "main.js": "/respektvordemherd/static/js/main.e8c7abcd.chunk.js",
     "main.js.map": "/respektvordemherd/static/js/main.e8c7abcd.chunk.js.map",
     "runtime-main.js": "/respektvordemherd/static/js/runtime-main.8a7fbd1a.js",
@@ -8,16 +8,16 @@
     "static/js/2.fdfa6ac3.chunk.js": "/respektvordemherd/static/js/2.fdfa6ac3.chunk.js",
     "static/js/2.fdfa6ac3.chunk.js.map": "/respektvordemherd/static/js/2.fdfa6ac3.chunk.js.map",
     "index.html": "/respektvordemherd/index.html",
-    "precache-manifest.e1787ed181368cf1e7c41b0f232af4e0.js": "/respektvordemherd/precache-manifest.e1787ed181368cf1e7c41b0f232af4e0.js",
+    "precache-manifest.c1dfe1dcfd0feebc7f1e5cfc542ccff5.js": "/respektvordemherd/precache-manifest.c1dfe1dcfd0feebc7f1e5cfc542ccff5.js",
     "service-worker.js": "/respektvordemherd/service-worker.js",
-    "static/css/main.88569171.chunk.css.map": "/respektvordemherd/static/css/main.88569171.chunk.css.map",
+    "static/css/main.1459ef7a.chunk.css.map": "/respektvordemherd/static/css/main.1459ef7a.chunk.css.map",
     "static/js/2.fdfa6ac3.chunk.js.LICENSE.txt": "/respektvordemherd/static/js/2.fdfa6ac3.chunk.js.LICENSE.txt",
-    "static/media/variables.css": "/respektvordemherd/static/media/mulish.767965d0.ttf"
+    "static/media/index.css": "/respektvordemherd/static/media/mulish-regular.767965d0.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.8a7fbd1a.js",
     "static/js/2.fdfa6ac3.chunk.js",
-    "static/css/main.88569171.chunk.css",
+    "static/css/main.1459ef7a.chunk.css",
     "static/js/main.e8c7abcd.chunk.js"
   ]
 }
