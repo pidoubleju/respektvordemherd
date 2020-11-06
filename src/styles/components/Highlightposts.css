@@ -58,3 +58,23 @@
     padding: initial;
   }
 }
+
+@media (max-width: 700px) {
+  .highlight-post .post-header {
+    width: 400px;
+  }
+  .highlight-post .teaser-text {
+    width: 200px;
+  }
+}
+
+@media (max-width: 370px) {
+  .highlight-post .post-header {
+    width: 300px;
+  }
+  .highlight-post .teaser-text {
+    width: 200px;
+    padding: 0;
+    margin-top: var(--layout-space-small);
+  }
+}

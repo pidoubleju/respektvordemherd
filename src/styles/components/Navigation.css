@@ -1,7 +1,6 @@
 .navigation {
     background: var(--nightshade);
     justify-content: flex-end;
-    padding: var(--layout-space-small) 15vw;
 }
 .nav-item a {
     margin-right: var(--space-large);

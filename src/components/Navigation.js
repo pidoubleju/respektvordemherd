@@ -21,7 +21,7 @@ function Navigation() {
 
 	if (navItems) {
 		return (
-			<div className='navigation flex'>
+			<div className='navigation flex container'>
 				{navItems.map((item, index) => (
 					<NavigationItem item={item} key={index}/>
 				))}

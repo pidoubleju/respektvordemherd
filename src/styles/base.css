@@ -83,7 +83,7 @@ li {
 	padding-left: var(--space-large);
 }
 li:before {
-    content: '';
+	content: '';
 	position: absolute;
 	left: 0;
 	top: 15px;
@@ -98,4 +98,51 @@ li:before {
 
 .relative {
 	position: relative;
+}
+
+@media (max-width: 800px) {
+	.basic-columns {
+		column-count: 1;
+	}
+}
+
+@media (max-width: 700px) {
+	h1,
+	.h1 {
+		font-size: calc(var(--font-size-h1) * 0.66);
+	}
+	h2,
+	.h2 {
+		font-size: calc(var(--font-size-h2) * 0.66);
+	}
+	h3,
+	.h3 {
+		font-size: calc(var(--font-size-h3) * 0.66);
+	}
+	h4,
+	.h4 {
+		font-size: calc(var(--font-size-h4) * 0.66);
+	}
+	.container {
+		padding: var(--layout-space-small) 8vw;
+	}
+}
+
+@media (max-width: 370px) {
+	h1,
+	.h1 {
+		font-size: calc(var(--font-size-h1) * 0.50);
+	}
+	h2,
+	.h2 {
+		font-size: calc(var(--font-size-h2) * 0.50);
+	}
+	h3,
+	.h3 {
+		font-size: calc(var(--font-size-h3) * 0.50);
+	}
+	h4,
+	.h4 {
+		font-size: calc(var(--font-size-h4) * 0.50);
+	}
 }
