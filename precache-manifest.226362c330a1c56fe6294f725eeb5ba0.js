@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "53ee115ad49e177ec2c40ad096b26835",
+    "revision": "05a5e26287497f8648de9173dadaf397",
     "url": "/respektvordemherd/index.html"
   },
   {
-    "revision": "430ca5c5e7a48e4d7f6a",
-    "url": "/respektvordemherd/static/css/main.1459ef7a.chunk.css"
+    "revision": "f000016d8be1cb022b33",
+    "url": "/respektvordemherd/static/css/main.eaa66f23.chunk.css"
   },
   {
     "revision": "9250f88b46035f5063e9",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/respektvordemherd/static/js/2.fdfa6ac3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "430ca5c5e7a48e4d7f6a",
+    "revision": "f000016d8be1cb022b33",
     "url": "/respektvordemherd/static/js/main.e8c7abcd.chunk.js"
   },
   {
