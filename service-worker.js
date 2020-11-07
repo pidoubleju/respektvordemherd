@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/respektvordemherd/precache-manifest.bc08386652548fbbea9cb42dd856066a.js"
+  "/respektvordemherd/precache-manifest.fcd3169b8721f299a444526f449cffcb.js"
 );
 
 self.addEventListener('message', (event) => {
