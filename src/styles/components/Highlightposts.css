@@ -13,6 +13,7 @@
 .highlight-post > .post > .wrapper {
     position: absolute;
     left: 0;
+    z-index: 1;
 }
 .highlight-post .teaser-text {
   width: 470px;

@@ -2,6 +2,7 @@ import React, { useEffect, useReducer } from 'react';
 import HighlightPostsSidebar from './HighlightPostsSidbar';
 import { useHistory } from 'react-router-dom';
 import '../styles/components/Highlightposts.css';
+import { motion } from 'framer-motion';
 
 export const ACTIONS = {
 	SET_POSTS: 'set-posts',
@@ -40,11 +41,13 @@ function HighlightPosts({ posts }) {
 		const { alt, url } = galerie[0].galerie_bild;
 		return (
 			<div className='post flex' key={post.post.id} onClick={() => { viewPostDetail(post) }}>
-				<div className='wrapper'>
+				<motion.div initial={{scale: 0.9, y: 200}} animate={{ scale: 1.0, y: 0 }} transition={{ duration: 0.3 }}
+							className='wrapper'>
 					<h1 className='post-header'>{blog_header[0].text}</h1>
 					<p className='teaser-text'>{teaser[0].text}</p>
-				</div>
-				<img src={url} alt={alt} />
+				</motion.div>
+				<motion.img  initial={{x: 70}} animate={{ x: 0 }} transition={{ duration: 0.3 }}
+							src={url} alt={alt} />
 			</div>
 		);
 	}
