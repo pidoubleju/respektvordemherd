@@ -28,6 +28,7 @@ function Navigation() {
 		if (mobileNavActive) {
 			toggleMobileNav(false);
 		}
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [location]);
 
 	const wideScreenNav = (
