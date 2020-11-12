@@ -4,11 +4,14 @@ import NotFound from '../pages/NotFound';
 import NavigationItem from '../components/NavigationItem';
 import '../styles/components/Navigation.css'
 import { motion, AnimatePresence } from 'framer-motion';
+import { useLocation } from "react-router-dom";
 
 function Navigation() {
+	let location = useLocation();
 	const [navItems, setNavItems] = useState([]);
 	const [notFound, toggleNotFound] = useState(false);
 	const [mobileNavActive, toggleMobileNav] = useState(false);
+
 	useEffect(() => {
 		const fetchData = async () => {
             const result = await client.getSingle('navigation');
@@ -20,6 +23,12 @@ function Navigation() {
 		};
 		fetchData();
 	}, []);
+
+	useEffect(() => {
+		if (mobileNavActive) {
+			toggleMobileNav(false);
+		}
+	}, [location]);
 
 	const wideScreenNav = (
 		<div className='navigation flex container widescreen'>
