@@ -5,7 +5,6 @@ import Image from './Image';
 import Button from './Button';
 
 function BannerSlice({item, index}) {
-    console.log(item.primary)
     const {
         'button_label': buttonLabel,
         'button_link': buttonLink,

@@ -39,6 +39,11 @@
     align-self: flex-end;
 }
 
+
+.mobile-nav-toggle {
+    cursor: pointer;
+}
+
 @media (min-width: 760px) {
     .nav-items {
         width: 100%;
