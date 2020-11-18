@@ -7,7 +7,6 @@ import './styles/variables.css';
 import './styles/base.css';
 import Navigation from './components/Navigation';
 import PostDetail from './pages/PostDetail';
-import Search from './components/Search';
 
 const App = () => {
 	const repoNameArray = /([^/]+)\.cdn.prismic\.io\/api/.exec(apiEndpoint);
